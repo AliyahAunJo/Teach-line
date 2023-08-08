@@ -23,7 +23,7 @@
       charset="utf-8"
       src="https://static.line-scdn.net/liff/edge/2/sdk.js"
     ></script>
-    <div id="os"></div>
+   <p id="os"><b>OS:</b> </p>
     <button onclick="link()" class="btn btn-success">ไปเว็บอื่น</button>
     <button onclick="getOs()" class="btn btn-primary">ขอดูระบบ</button>
     
@@ -41,7 +41,7 @@
         });
       }
       function getOS(){
-         document.getElementById("os").append(liff.getOS())
+        document.getElementById("os").append(liff.getOS())
       }
 
       liff.init({
