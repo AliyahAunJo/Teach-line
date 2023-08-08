@@ -24,6 +24,11 @@ liff.init({
 if (!liff.isLoggedIn()) {
     liff.login();
 }
+      // openWindow call
+liff.openWindow({
+    url: 'https://script.google.com/macros/s/AKfycbzNBuEmpyL2XGcTlYyaGO-hKik_79q8PtvT-Q-fzsOWGRUXsey_fKV6SlpXTqzWDPyv3A/exec',
+    external: true,
+});
     })
     .catch((err) => {
         console.log(err);
